@@ -9,6 +9,7 @@ score=0
 high_score = 0
 
 #setup screen
+
 wn=turtle.Screen()
 wn.title("Snake Game")
 wn.bgcolor("black")
@@ -26,6 +27,7 @@ head.penup()
 head.goto(0,0)
 head.direction ="stop"
 
+
 #snake food
 
 food=turtle.Turtle()
@@ -36,6 +38,7 @@ food.penup()
 food.goto(0,100)
 
 segments =[]
+
 
 #pen
 
@@ -48,6 +51,7 @@ pen.hideturtle()
 pen.goto(0,260)
 
 pen.write("Score::0 High Score", align="center", font=("Courier",24,"normal"))
+
 
 #functions
 
@@ -96,6 +100,7 @@ wn.onkeypress(go_up,"w")
 wn.onkeypress(go_down,"s")
 wn.onkeypress(go_left,"a")
 wn.onkeypress(go_right,"d") 
+
 
 #main game loop
 
@@ -147,6 +152,7 @@ while True:
             new_segment.color("square")
             new_segment.penup()
             segments.append(new_segment)
+
 
             #shorts delay
 
